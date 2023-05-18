@@ -5,6 +5,7 @@ import {
 } from '@chakra-ui/react';
 import Inicio from './components/Inicio';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Main from './components/Main';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Inicio />} />
-          <Route path='/store' element={<Inicio />} />
+          <Route path='/store' element={<Main />} />
         </Routes>
       </BrowserRouter>
     </ChakraProvider>
